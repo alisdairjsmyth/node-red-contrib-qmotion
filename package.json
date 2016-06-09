@@ -1,0 +1,27 @@
+{
+  "name": "node-red-contrib-qmotion",
+  "version": "0.0.1",
+  "description": "A Node-RED node to control QMotion blinds using a QSync device",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisdairjsmyth/node-red-contrib-qmotion.git"
+  },
+  "keywords": [
+    "node-red",
+    "qmotion"
+  ],
+  "node-red": {
+    "nodes": {
+      "sunpos": "qmotion/qmotion.js"
+    }
+  },
+  "author": "Alisdair Smyth",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/alisdairjsmyth/node-red-contrib-qmotion/issues"
+  },
+  "homepage": "https://github.com/alisdairjsmyth/node-red-contrib-qmotion#readme",
+  "dependencies": {
+    "qmotion": "0.0.6"
+  }
+}
