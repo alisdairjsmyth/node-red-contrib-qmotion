@@ -27,6 +27,8 @@ module.exports = function (RED) {
             node.error("qmotion.error.invalid-msg-payload", msg);
             validMsg = false;
         } else {
+            var i;
+
             for (i in msgProperty) {
                 if (!(msgProperty[i] in msg.payload)) {
                     node.error("qmotion.error.property-" + msgProperty[i] + "-missing", msg);
@@ -50,14 +52,19 @@ module.exports = function (RED) {
 
     function qmotion(config) {
         RED.nodes.createNode(this, config);
+        this.ip    = config.ip;
 
-        var qsync = require('qmotion');
-        sync.setDebug(config.debug);
+        var qsync  = require('qmotion');
 
-        var device = new qsync(config.ip);
+        try {
+            var device = new qsync(this.ip);
+        }
+        catch (err) {
+            this.error(err);
+        }
 
         this.on('input', function (msg) {
-            if (validateMsg(node, msg)) {
+            if (validateMsg(this, msg)) {
                 var blind = device.blinds(msg.payload.channel);
                 blind.move(msg.payload.blindPosition);
             }

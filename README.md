@@ -10,7 +10,6 @@ Usage
 -----
 This node sends commands to a QMotion blind via a QSync device.  It is configured with the following properties:
 * IP: the IP address of the QSync device
-* debug: enables debugging within qmotion package
 
 It receives input messages containing:
 * channel: identifier of the blind
