@@ -1,4 +1,7 @@
 # node-red-contrib-qmotion
+[![NPM Version](https://img.shields.io/npm/v/node-red-contrib-qmotion.svg)](https://www.npmjs.com/package/node-red-contrib-qmotion)
+[![Dependency Status](https://img.shields.io/versioneye/d/nodejs/node-red-contrib-qmotion.svg)](https://www.versioneye.com/nodejs/node-red-contrib-qmotion/)
+
 A <a href="http://nodered.org" target="_new">Node-RED</a> node to control QMotion blinds using a QSync device
 
 Install

@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/alisdairjsmyth/node-red-contrib-qmotion#readme",
   "dependencies": {
-    "qmotion": "0.0.6"
+    "qmotion": "^0.1.2"
   }
 }
