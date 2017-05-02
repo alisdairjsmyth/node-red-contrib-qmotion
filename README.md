@@ -18,4 +18,4 @@ It receives input messages containing:
 * channel: identifier of the blind
 * blindPosition: the new position of the blind
 
-The commands are submitted to the QSync device using the <a href"https://www.npmjs.com/package/qmotion">qmotion</a> package published by <a href="https://www.npmjs.com/~devbobo">devbobo</a>.  It should be noted the qmotion package has been developed based on observations rather than a published API.  The QSync device then interacts with the blinds over 433MHz RF.
+The commands are submitted to the QSync device using the <a href="https://www.npmjs.com/package/qmotion">qmotion</a> package published by <a href="https://www.npmjs.com/~devbobo">devbobo</a>.  It should be noted the qmotion package has been developed based on observations rather than a published API.  The QSync device then interacts with the blinds over 433MHz RF.
